@@ -1,0 +1,354 @@
+/* Reset dan dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #493636;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* Header dan navbar */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0077cc;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #0077cc;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.nav-actions input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 200px;
+}
+
+.nav-actions button {
+  padding: 0.5rem 1.2rem;
+  background: linear-gradient(to right, #0077cc, #00bcd4);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.nav-actions button:hover {
+  background: linear-gradient(to right, #005fa3, #0097a7);
+}
+
+/* Banner minimalis dengan ikon, gradasi ungu & animasi */
+.minimal-banner {
+  background: linear-gradient(to right, #8e44ad, #6c5ce7); /* Ungu elegan */
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.banner-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.banner-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.banner-text h1 span {
+  color: #ffe600;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #ffe600;
+  color: #4b2c5e;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #e6c200;
+  transform: scale(1.05);
+}
+
+/* Flash sale dan produk */
+.flash-sale {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 1rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+  font-size: 2.2rem;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+.countdown span {
+  margin-left: 1rem;
+  font-weight: bold;
+  color: #d9534f;
+}
+
+/* Slider */
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+/* Tombol panah slider */
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.slider-button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.slider-button.left {
+  left: 0;
+}
+
+.slider-button.right {
+  right: 0;
+}
+
+/* Kartu produk */
+.product-card {
+  min-width: 250px;
+  flex-shrink: 0;
+  background-color: #000000;
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+/* Harga dan rating */
+.price {
+  margin: 0.5rem 0;
+}
+
+.new-price {
+  color: #0077cc;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 0.5rem;
+}
+
+.rating {
+  color: #ffc107;
+}
+
+/* Tombol WhatsApp */
+.button-link {
+  margin-top: 1rem;
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.button-link:hover {
+  background-color: #1ebe5d;
+}
+
+/* Footer */
+.footer {
+  background-color: #1e1e1e;
+  color: white;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #ff9900;
+}
+
+.icons button {
+  background-color: #ff9900;
+  color: white;
+  margin-right: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}
+
+.socials i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.support-btn {
+  background-color: #333;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.aplikasi .app-badge {
+  width: 140px;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.footer-bottom {
+  background-color: orange;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer-bottom .brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .navbar, .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-card {
+    min-width: 180px;
+  }
+
+  .nav-actions input[type="text"] {
+    width: 100%;
+  }
+}

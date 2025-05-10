@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOOGIH.STORE</title>
+    <link rel="stylesheet" href="tugas.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-papnF3J+d+jFk5ZOE3B2e6nDn8+Sgz8FKd3+hs63KHbJ7eySjK+ObXc6QIbJeu37Thv7ygmINiYy0kA6G1DcYw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">SOOGIH.STORE</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Best Sellers</a></li>
+          <li><a href="#">lokasi kami</a></li>
+        </ul>
+        <div class="nav-actions">
+          <input type="text" placeholder="Search products..." />
+          <button>Cart</button>
+        </div>
+      </nav>
+    </header>
+    <section class="hero-banner minimal-banner">
+      <div class="banner-icon">
+        <i class="fas fa-tshirt"></i>
+      </div>
+      <div class="banner-text">
+        <h1>Selamat Datang di <span>SOOGIH.STORE</span></h1>
+        <p>Cetak kaos, jersey custom, dan layanan sablon terbaik untuk kebutuhan personal dan bisnis Anda.</p>
+        <a href="#" class="cta-button">Lihat Produk Unggulan</a>
+      </div>
+    </section>
+
+    <section class="flash-sale">
+      <div class="section-header">
+        <h2>Kami Melayani : </h2>
+      </div>
+
+      <div class="slider-wrapper">
+        <button class="slider-button left" onclick="slideLeft()">
+          &#10094;
+        </button>
+        <div class="product-slider" id="productSlider">
+          <div class="product-card">
+            <img src="gambar/kaos.jpg" alt="Kaos" />
+            <h3>SABLON LUSINAN</h3>
+            <p class="price">
+              <span class="new-price">Rp.80.000</span>
+              <span class="old-price">Rp.95.000</span>
+            </p>
+            <p class="rating">★★★★☆ (88)</p>
+          </div>
+          <div class="product-card">
+            <img src="gambar/SABLON SATUAN.jpg" alt="Satuan" />
+            <h3>SABLON SATUAN</h3>
+            <p class="price">
+              <span class="new-price">Rp.120.000</span>
+              <span class="old-price">Rp.250.000</span>
+            </p>
+            <p class="rating">★★★★☆ (75)</p>
+          </div>
+          <div class="product-card">
+            <img src="gambar/FOTO JERSEY.jpg" alt="Jersey" />
+            <h3>JERSEY BOLA</h3>
+            <p class="price">
+              <span class="new-price">Rp.150.000</span>
+              <span class="old-price">Rp.180.000</span>
+            </p>
+            <p class="rating">★★★★★ (99)</p>
+          </div>
+            <div class="product-card">
+              <img src="gambar/kaos.jpg" alt="Kaos" />
+              <h3>SABLON LUSINAN</h3>
+              <p class="price">
+                <span class="new-price">Rp.80.000</span>
+                <span class="old-price">Rp.95.000</span>
+              </p>
+              <p class="rating">★★★★☆ (88)</p>
+            </div>
+            <div class="product-card">
+              <img src="gambar/SABLON SATUAN.jpg" alt="Satuan" />
+              <h3>SABLON SATUAN</h3>
+              <p class="price">
+                <span class="new-price">Rp.120.000</span>
+                <span class="old-price">Rp.250.000</span>
+              </p>
+              <p class="rating">★★★★☆ (75)</p>
+            </div>
+            <div class="product-card">
+              <img src="gambar/FOTO JERSEY.jpg" alt="Jersey" />
+              <h3>JERSEY BOLA</h3>
+              <p class="price">
+                <span class="new-price">Rp.150.000</span>
+                <span class="old-price">Rp.180.000</span>
+              </p>
+              <p class="rating">★★★★★ (99)</p>
+            </div>
+            <div class="product-slider" id="productSlider">
+          <div class="product-card">
+            <img src="gambar/kaos.jpg" alt="Kaos" />
+            <h3>SABLON LUSINAN</h3>
+            <p class="price">
+              <span class="new-price">Rp.80.000</span>
+              <span class="old-price">Rp.95.000</span>
+            </p>
+            <p class="rating">★★★★☆ (88)</p>
+          </div>
+          <div class="product-card">
+            <img src="gambar/SABLON SATUAN.jpg" alt="Satuan" />
+            <h3>SABLON SATUAN</h3>
+            <p class="price">
+              <span class="new-price">Rp.120.000</span>
+              <span class="old-price">Rp.250.000</span>
+            </p>
+            <p class="rating">★★★★☆ (75)</p>
+          </div>
+          <div class="product-card">
+            <img src="gambar/FOTO JERSEY.jpg" alt="Jersey" />
+            <h3>JERSEY BOLA</h3>
+            <p class="price">
+              <span class="new-price">Rp.150.000</span>
+              <span class="old-price">Rp.180.000</span>
+            </p>
+            <p class="rating">★★★★★ (99)</p>
+          </div>
+          <button class="slider-button right" onclick="slideRight()">&#10095;</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Tentang Toko -->
+        <div class="footer-section">
+          <h4>Tentang Kami</h4>
+          <p>
+            Kami adalah toko online terpercaya yang menyediakan berbagai produk
+            berkualitas dengan harga terbaik. Kepuasan pelanggan adalah
+            prioritas utama kami.
+          </p>
+        </div>
+
+        <!-- Link Navigasi -->
+        <div class="footer-section">
+          <h4>Menu Cepat</h4>
+          <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Produk</a></li>
+            <li><a href="#">Promo</a></li>
+            <li><a href="#">Kontak</a></li>
+            <li><a href="#">Bantuan</a></li>
+          </ul>
+        </div>
+
+        <!-- Media Sosial -->
+        <div class="footer-section">
+          <h4>Ikuti Kami</h4>
+          <div class="socials">
+            <a href="https://www.facebook.com/share/1AC8vcD4Z5/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/soogih_collection?igsh=MTIydnQwcTZnbjNoNQ%3D%3D&utm_source=qr "><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@soogih.collection?_t=ZS-8wEkKqG3pSO&_r=1"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/6281257625085"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Dukungan dan Aplikasi -->
+        <div class="footer-section aplikasi">
+          <h4>Unduh Aplikasi</h4>
+          <img
+            src="gambar/google-play.png"
+            alt="Google Play"
+            class="app-badge"
+          />
+          <img src="gambar/app-store.png" alt="App Store" class="app-badge" />
+          <button class="support-btn">Hubungi Dukungan</button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 SOOGIH.STORE. Semua hak dilindungi.</p>
+        <div class="brand">
+          <span>Powered by <strong>SOOGIH.STORE</strong></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="tugas.js"></script>
+  </body>
+</html>
